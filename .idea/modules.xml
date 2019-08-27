@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Git-Updater.iml" filepath="$PROJECT_DIR$/.idea/Git-Updater.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../curses-menu/.idea/curses-menu.iml" filepath="$PROJECT_DIR$/../curses-menu/.idea/curses-menu.iml" />
-    </modules>
-  </component>
-</project>
