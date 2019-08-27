@@ -1,0 +1,89 @@
+{
+  "modules": {
+    "function_module": "utils",
+    "action_module": "actions"
+  },
+  "scanner": {
+    "should_ignore_hidden": true,
+    "exclude_directories": [
+      ".wine",
+      "hallium",
+      "lineage",
+      ".Trash-1000",
+      ".local",
+      ".cache",
+      "pacaur",
+      "HDD/Programming"
+    ]
+  },
+  "ui": {
+    "display_selected_option_at_top": false,
+    "highlight_color": "blue"
+  },
+  "menu": {
+    "title": "Git Repo Manager",
+    "options": [
+      {
+        "title": "Select a repo",
+        "type": "submenu",
+        "options": "repos",
+        "action": "select_repo",
+        "on_item_select": {
+          "title": "Select an action",
+          "subtitle": "${get_info_for_repo}",
+          "type": "submenu",
+          "options": [
+            {
+              "title": "Pull from upstream",
+              "type": "function",
+              "action": "select_repo"
+            },
+            {
+              "title": "Push committed changes",
+              "type": "function",
+              "action": "select_repo"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Find and add repos",
+        "type": "function",
+        "action": "find_and_add_repos"
+      },
+      {
+        "title": "Manually add a repo",
+        "type": "function",
+        "action": "manual_add_repo"
+      },
+      {
+        "title": "Clone a repo",
+        "type": "function",
+        "action": "clone_repo"
+      }
+    ]
+  },
+  "repos": [
+    "/home/jake/Programming/flask-restless",
+    "/home/jake/Programming/PMMS Testing Media",
+    "/home/jake/Programming/wasm-game-of-life",
+    "/home/jake/Programming/TensorflowJS-NeuralNet",
+    "/home/jake/Programming/pmms",
+    "/home/jake/Programming/scepter",
+    "/home/jake/Programming/Scripts/PnP Auth",
+    "/home/jake/Programming/py-mpd-playlist-generator",
+    "/home/jake/Programming/Flask-Gallery",
+    "/home/jake/Programming/Work/ADMScheduler",
+    "/home/jake/Programming/Work/Certificates",
+    "/home/jake/Programming/Rofi_MPD",
+    "/home/jake/Programming/DGM-Fetcher",
+    "/home/jake/Programming/Gallery/Gallery-API",
+    "/home/jake/Programming/Boggle-Solver",
+    "/home/jake/Programming/react-gallery",
+    "/home/jake/Programming/discord-stats",
+    "/home/jake/Programming/Website/cdaa",
+    "/home/jake/Programming/Website/jakestanger",
+    "/home/jake/Programming/paq",
+    "/home/jake/Programming/Plex-Music-Viewer"
+  ]
+}
